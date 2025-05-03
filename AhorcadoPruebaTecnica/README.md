@@ -52,4 +52,4 @@ Desarrollado por **Santiago Mejía Ocampo**.
 ## Tecnologías utilizadas
 - astro
 - react
--tailwind
+- tailwind
