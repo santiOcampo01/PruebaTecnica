@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro'
+import HangmanGame from '../components/hangman.jsx'
+---
+
+<Layout title="Ahorcado - Prueba Tecnica">
+  <div class="flex justify-center">
+    <HangmanGame client:load />
+  </div>
+</Layout>

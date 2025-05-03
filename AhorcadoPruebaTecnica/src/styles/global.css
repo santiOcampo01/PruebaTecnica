@@ -1,0 +1,22 @@
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded font-medium transition text-white inline-block;
+  }
+  .btn-blue  { @apply bg-blue-600 hover:bg-blue-700; }
+  .btn-green { @apply bg-green-600 hover:bg-green-700; }
+  .btn-purple{ @apply bg-purple-600 hover:bg-purple-700; }
+  .btn-pink  { @apply bg-pink-600 hover:bg-pink-700; }
+  .btn-red   { @apply bg-red-600 hover:bg-red-700; }
+  .btn-gray  { @apply bg-gray-600 hover:bg-gray-700; }
+  .header   { @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white; }
+  .card     { @apply bg-white p-8 rounded-2xl shadow-xl max-w-md mx-auto; }
+  .word-box { @apply flex justify-center space-x-2 text-4xl font-mono tracking-wider mt-6; }
+  .placeholder { @apply w-8 h-12 border-b-2 text-center text-2xl inline-block; }
+  .letter-input { @apply w-16 h-16 text-2xl text-center border rounded focus:outline-none; }
+}
